@@ -147,6 +147,28 @@ matrix-reminder-bot other-config.yaml
 
 Invite the bot to a room and it should accept the invite and join.
 
+### Setting a task
+
+The bot is collecting Tasks you create like:
+
+```
+!task <priority>; <name>
+```
+
+* `<priority>` is an integer, like from 0 to 100, or whatever you like. You can and should go with your own system, here you just add an integer to your tasks.
+
+* `<name>` is a string and the name or description of your task
+
+### List Tasks
+
+This is where you look up what tasks you have, ordered by your `<priority>` integer descending:
+
+```
+!tasklist
+```
+
+Chances are, you might want to run this in a private room, only with the bot. If you run it in a room with other people inside, everyone will be able to see your tasklist.
+
 ### Setting a reminder
 
 Have the bot ping you in the room about something:
